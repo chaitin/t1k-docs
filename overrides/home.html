@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{{ 'assets/external/stylesheets/custom.00c04c01.min.css' | url }}">
+{% endblock %}
+{% block tabs %}
+{{ super() }}
+<style>.md-header {
+    position: initial
+}
+
+.md-main__inner {
+    margin: 0
+}
+
+.md-content {
+    display: none
+}
+
+.md-grid {
+    max-width: 1500px;
+}
+
+@media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+        display: none
+    }
+}
+
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        display: none
+    }
+}</style>
+{% if config.theme.language == 'zh' %}
+<section class="mdx-container">
+    <div class="md-grid md-typeset">
+        <div class="mdx-hero">
+            <div class="mdx-hero__image">
+                <img src="assets/images/shield.gif" alt="" width="800" height="800" draggable="false">
+            </div>
+            <div class="mdx-hero__content">
+                <h1>为 NGINX 设计</h1>
+                <p>得益于 NGINX 在代理市场的广泛应用，长亭科技 2014 年成立后选择为 NGINX 开发 T1K 模块的方式切入竞争激烈的 WAF 市场，并且凭借技术实力赢得了客户的信任。</p>
+                <p>基于 T1K 模块的解决方案支持以动态加载的方式为 NGINX OSS、NGINX Plus、OpenResty、APISIX、Kong、Ingress Nginx 等业界广泛应用的代理提供全面的请求与响应监控。</p>
+                <p>检测服务不可达自动 Bypass 以及高负载降级等能力保障业务稳定运行。我们还引入 BOT / API防护等多重安全能力，全方位保障企业的网络安全，助力业务的稳定与增长。</p>
+                <a href="{{ 'mailto:info@chaitin.com?subject=我们对 T1K 模块非常感兴趣' | url }}" class="md-button md-button--primary">
+                    获取模块
+                </a>
+                <a href="{{ 'docs/' | url }}" title="T1K Documentation" class="md-button">
+                    配置文档
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% else %}
+<section class="mdx-container">
+    <div class="md-grid md-typeset">
+        <div class="mdx-hero">
+            <div class="mdx-hero__image">
+                <img src="assets/images/shield.gif" alt="" width="800" height="800" draggable="false">
+            </div>
+            <div class="mdx-hero__content">
+                <h1>Designed for NGINX</h1>
+                <p>Leveraging NGINX's strong presence in the proxy market, Changting Technology has entered the competitive WAF market by developing the T1K module since its
+                    establishment in 2014, earning customer trust.</p>
+                <p>The solution based on the T1K module supports comprehensive request and response monitoring for widely used proxies in the industry such as NGINX OSS, NGINX
+                    Plus, OpenResty, APISIX, Kong, and Ingress Nginx, through dynamic loading.</p>
+                <p>Moreover, functionalities such as automatic bypass and high-load degradation ensure business continuity, while BOT/API protection and other security measures
+                    provide comprehensive network security for enterprises.</p>
+                <a href="{{ 'mailto:info@chaitin.com?subject=We would like to try the T1K module' | url }}" class="md-button md-button--primary">
+                    Get Module
+                </a>
+                <a href="{{ 'docs/' | url }}" title="T1K Documentation" class="md-button">
+                    Documentation
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}
