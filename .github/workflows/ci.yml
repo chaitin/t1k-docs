@@ -44,6 +44,6 @@ jobs:
 
       - name: Deploy
         run: |
-          mkdir -p overrides/assets/external/stylesheets && cp -r mkdocs-material/material/overrides/assets/stylesheets/ overrides/assets/external/stylesheets/
+          mkdir -p overrides/assets/external/stylesheets && cp -r mkdocs-material/material/overrides/assets/stylesheets/* overrides/assets/external/stylesheets/
           mkdocs build -f config/en/mkdocs.yml && mkdocs build -f config/zh/mkdocs.yml
           ghp-import -m "github-actions[bot] deploy (${GITHUB_SHA:0:7})" --push --force generated
