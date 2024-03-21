@@ -8,9 +8,9 @@
         document.addEventListener('DOMContentLoaded', function () {
             let userLang = navigator.language || navigator.userLanguage;
             if (userLang.startsWith('zh')) {
-                window.location.href += '/zh/';
+                window.location.href = '/zh/';
             } else {
-                window.location.href += '/en/';
+                window.location.href = '/en/';
             }
         });
     </script>
