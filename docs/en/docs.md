@@ -4,9 +4,9 @@ hide:
 ---
 # T1K Documentation
 
-The T1K module provided by Chaitin Technology can add WAF / API security features to any proxy service based on NGINX (including NGINX Plus).
+Chaitin Tech has launched the T1K module, which can provide WAF/API security reinforcement for all proxy services based on Nginx (including Nginx Plus).
 
-Compared to the WAF modules written in Lua based on OpenResty's capabilities, such as our [Lua-Resty-T1K](https://github.com/chaitin/lua-resty-t1k), the T1K module written in C language boasts higher performance and exclusive response detection capabilities.
+Compared to our [Lua-Resty-T1K](https://github.com/chaitin/lua-resty-t1k) developed in Lua, the T1K module crafted in C not only delivers superior performance but also features unique response detection capabilities.
 
 ## Request Detection
 

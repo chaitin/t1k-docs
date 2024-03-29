@@ -4,9 +4,9 @@ hide:
 ---
 # T1K 文档
 
-长亭科技提供的 T1K 模块可以为任何基于 Nginx（包括 Nginx Plus）的代理服务增加 WAF / API 安全功能。
+长亭科技推出的 T1K 模块，能够为所有基于 Nginx（含 Nginx Plus）的代理服务提供 WAF/API 安全加固。
 
-相比于基于 OpenResty 能力用 Lua 写的 WAF 模块，例如我们的 [Lua-Resty-T1K](https://github.com/chaitin/lua-resty-t1k)，C 语言编写的 T1K 模块拥有更高的性能，以及独家的响应检测能力。
+与我们使用 Lua 语言开发的 [Lua-Resty-T1K](https://github.com/chaitin/lua-resty-t1k) 相比，C 语言打造的 T1K 模块不仅提供了更出色的性能，还具备独有的响应检测功能。
 
 ## 请求检测
 
